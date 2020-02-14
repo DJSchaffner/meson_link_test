@@ -6,10 +6,8 @@ cpp = meson.get_compiler('cpp')
 dir_base = meson.current_source_dir()
 dir_lib = join_paths(dir_base, 'lib')
 
-myproject_inc = include_directories('include')
-lib_mylib = cpp.find_library('mylib', dirs: dir_lib, required: true)
+mylib_dep = subproject('mylib').get_variable('mylib_dep')
 
-executable( 'myproject', name_prefix: '', name_suffix: 'exe',
+executable( 'myproject',
             sources: myproject_src,
-            dependencies: [lib_mylib],
-            include_directories: myproject_inc)
+            dependencies: [mylib_dep] )
