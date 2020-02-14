@@ -15,6 +15,12 @@ file.
 If you want to help and know a working solution or improvements, you are welcome to  
 fork this and create a working solution or contact me and issue a pull request.  
 
+#### Run instructions:
+- Run `meson build` from each base directory (*meson_link_test/mylib*, *meson_link_test/myproject*)
+  - Run `ninja -C build` from ./mylib, then manually copy necessary files over to *myproject*
+  - OR `ninja -C build install` from ./mylib and copy over created folder to myproject (You need to keep the *meson.build* file from *myproject*)
+- Run `ninja -C build` from ./myproject to compile *myproject*
+
 #### Test system:
 Windows 10 64 Bit  
 Python 3.8.0  
