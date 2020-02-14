@@ -2,6 +2,7 @@ project('freetype', ['cpp', 'c'])
 
 cpp = meson.get_compiler('cpp')
 cc = meson.get_compiler('c')
+
 dir_base = meson.current_source_dir()
 mylib_inc = include_directories('include')
 
