@@ -1,4 +1,4 @@
-project('freetype', ['cpp', 'c'])
+project('mylib', ['cpp', 'c'])
 
 cpp = meson.get_compiler('cpp')
 cc = meson.get_compiler('c')
