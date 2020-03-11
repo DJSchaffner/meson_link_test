@@ -1,7 +1,7 @@
 # meson_link_test
 
 This is a project to test how to create a Library that has an external  
-dependency and how to distribute it to an project that uses this library.  
+dependency and how to distribute it to an project that uses this library in [Meson Build](https://github.com/mesonbuild/meson).  
 The library used for this test is a static freetype library.  
 
 ~~Currently this is not working, I am trying to figure out how to achieve this  
